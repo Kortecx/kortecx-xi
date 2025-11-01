@@ -1,16 +1,31 @@
 [project]
 name = "kortecx-xi"
 version = "0.1.0"
-description = "Add your description here"
+description = "Executable intelligence utility"
 readme = "README.md"
 authors = [
     { name = "Kortecx", email = "kortecxhelp@gmail.com" },
     { name = "Jay Reddy", email = "jayachandra.s.reddy@gmail.com" }
 ]
 requires-python = ">=3.10"
+keywords = ["ai", "llm", "reinforcement learning", "machine learning", "artificial intelligence", "Agents", "AI Workflows"]
 dependencies = [
+    "accelerate>=1.11.0",
     "click>=8.3.0",
+    "diffusers>=0.35.2",
+    "duckdb>=1.4.1",
     "maturin>=1.9.6",
+    "mlflow>=3.5.1",
+    "neo4j>=6.0.2",
+    "onnx>=1.19.1",
+    "peft>=0.17.1",
+    "protobuf>=6.33.0",
+    "qdrant-client>=1.15.1",
+    "torch>=2.9.0",
+    "torchaudio>=2.9.0",
+    "torchvision>=0.24.0",
+    "transformers>=4.57.1",
+    "trl>=0.24.0",
 ]
 
 [build-system]
