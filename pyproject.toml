@@ -4,10 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "kortecx", email = "kortecxhelp@gmail.com" }
+    { name = "Kortecx", email = "kortecxhelp@gmail.com" },
+    { name = "Jay Reddy", email = "jayachandra.s.reddy@gmail.com" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "click>=8.3.0",
+    "maturin>=1.9.6",
+]
 
 [build-system]
 requires = ["hatchling"]
