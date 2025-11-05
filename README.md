@@ -5,7 +5,7 @@
 </h1>
 <h2 align="center" style="border-bottom: none">Executable intelligence Platform </h2>
 
-Kortecx is an open-source zero-hassle library to generalize the training and finetuning LLMs at scale, synthesize and engineer data, and build Agentic AI solutions.
+Kortecx is an open-source zero-hassle library to generalize the training and finetuning of LLMs at scale + synthesize and engineer data + and build Agentic AI solutions.
 
 </div>
 
@@ -14,7 +14,7 @@ Kortecx is an open-source zero-hassle library to generalize the training and fin
 
 [![Python SDK](https://img.shields.io/pypi/v/kortecx)](https://pypi.org/project/kortecx/)
 [![PyPI Downloads](https://img.shields.io/pypi/dm/kortecx)](https://pepy.tech/projects/kortecx)
-[![License](https://img.shields.io/github/license/kortecx/kortecx)](https://github.com/kortecx/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/kortecx/kortecx)](https://raw.githubusercontent.com/Kortecx/kortecx/refs/heads/main/LICENSE.txt)
 <a href="https://twitter.com/intent/follow?screen_name=kortecx" target="_blank">
 <img src="https://img.shields.io/twitter/follow/kortecx?logo=X&color=%20%23f5f5f5"
       alt="follow on X(Twitter)"></a>
