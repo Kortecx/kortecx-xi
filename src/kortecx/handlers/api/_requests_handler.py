@@ -1,11 +1,7 @@
-import random
 import uvicorn
-from starlette.responses import RedirectResponse,FileResponse
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from ..resources.starter import FrontendHander
-import threading
 from multiprocessing import Process
 
 app = FastAPI()
@@ -20,13 +16,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get('/')
-async def client():  
+
+@app.get("/")
+async def client():
     return "Welcome to Kortecx"
 
 
 def _init_backend():
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
 
 def start_components():
     backend = Process(target=_init_backend)

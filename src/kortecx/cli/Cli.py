@@ -1,5 +1,4 @@
 import click
-from ..handlers.resources.starter import FrontendHander
 from ..handlers.api._requests_handler import start_components
 
 

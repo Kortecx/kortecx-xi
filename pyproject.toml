@@ -1,7 +1,7 @@
 [project]
 name = "kortecx"
 version = "0.1.0"
-description = "Executable intelligence utility"
+description = "Executable Intelligence platform"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -10,6 +10,15 @@ authors = [
 ]
 requires-python = ">=3.10"
 keywords = ["ai", "llm", "reinforcement learning", "machine learning", "artificial intelligence", "Agents", "AI Workflows"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = [
     "accelerate>=1.11.0",
     "click>=8.3.0",
@@ -28,6 +37,11 @@ dependencies = [
     "transformers>=4.57.1",
     "trl>=0.24.0",
 ]
+[project.urls]
+homepage = "https://kortecx.com"
+issues = "https://github.com/kortecx/kortecx/issues"
+documentation = "https://kortecx.com/docs"
+repository = "https://github.com/kortecx/kortecx"
 
 [build-system]
 requires = ["hatchling"]
@@ -40,6 +54,7 @@ kx = "kortecx.__main__:cli"
 dev = [
     "black>=25.9.0",
     "ruff>=0.14.3",
+    "twine>=6.2.0",
 ]
 
 [tool.setuptools.packages.find]
@@ -53,6 +68,7 @@ exclude = [
     "src/kortecx/frontend/.svelte-kit/**",
     "src/kortecx/frontend/dist/**",
     "src/kortecx/backend/target/**",
+    "backend/target/**",
     "__pycache__/**",
     "*.pyc",
     "*.pyo",
