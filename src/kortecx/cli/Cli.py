@@ -1,6 +1,6 @@
 import click
-
-from ..handlers.resources.frontend import FrontendHander
+from ..handlers.resources.starter import FrontendHander
+from ..handlers.api._requests_handler import start_components
 
 
 @click.group(help="The Executable Intelligence Platform")
@@ -17,7 +17,7 @@ def start(enable_backend):
 
         print(sum_as_string(1, 2))
     else:
-        FrontendHander().init_frontend()
+        start_components()
 
 
 kx.add_command(start)
