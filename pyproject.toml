@@ -3,6 +3,7 @@ name = "kortecx"
 version = "0.1.0"
 description = "Executable intelligence utility"
 readme = "README.md"
+license = {text = "MIT"}
 authors = [
     { name = "Kortecx", email = "kortecxhelp@gmail.com" },
     { name = "Jay Reddy", email = "jayachandra.s.reddy@gmail.com" }
@@ -32,8 +33,41 @@ dependencies = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[project.scripts]
+kx = "kortecx.__main__:cli"
+
 [dependency-groups]
 dev = [
     "black>=25.9.0",
     "ruff>=0.14.3",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src/kortecx/**"]
+exclude = [
+    ".venv*",
+    "__pycache__*",
+    "kortecx.egg-info*",
+    "src/kortecx/frontend/node_modules/**",
+    "src/kortecx/frontend/.svelte-kit/**",
+    "src/kortecx/frontend/dist/**",
+    "src/kortecx/backend/target/**",
+    "__pycache__/**",
+    "*.pyc",
+    "*.pyo",
+    "*.pyd",
+    ]
+
+[tool.setuptools.package-data]
+kortecx = [
+    "**/*.js",
+    "**/*.ts",
+    "**/*.json",
+    "**/*.html",
+    "**/*.css",
+    # Add any other file types you need
+]
+
+[tool.black]
+line-length = 120
