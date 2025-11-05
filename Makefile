@@ -10,6 +10,7 @@ checkout:
 	git checkout $(branch)
 
 build:
+	rm -rf dist
 	rm -rf src/kortecx/frontend/node_modules
 	uv build
 	cd src/kortecx/frontend && npm i

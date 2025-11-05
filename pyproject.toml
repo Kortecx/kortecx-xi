@@ -1,6 +1,6 @@
 [project]
 name = "kortecx"
-version = "0.1.0"
+version = "0.1.1"
 description = "Executable Intelligence platform"
 readme = "README.md"
 license = {text = "MIT"}
