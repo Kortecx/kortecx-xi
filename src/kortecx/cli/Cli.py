@@ -1,5 +1,6 @@
 import click
 from backend import sum_as_string
+from ..handlers.resources.frontend import FrontendHander
 
 
 @click.group(help="The Executable Intelligence Platform")
@@ -17,6 +18,7 @@ def start(enable_backend):
     else:
         print("Using Python Backend")
         print(sum_as_string(1, 2))
+        FrontendHander().init_frontend()
 
 
 kx.add_command(start)
