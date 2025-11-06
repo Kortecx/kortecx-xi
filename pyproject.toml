@@ -24,6 +24,7 @@ dependencies = [
     "click>=8.3.0",
     "diffusers>=0.35.2",
     "duckdb>=1.4.1",
+    "jinja2>=3.1.6",
     "maturin>=1.9.6",
     "mlflow>=3.5.1",
     "neo4j>=6.0.2",
